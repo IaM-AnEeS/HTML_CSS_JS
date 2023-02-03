@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHADOW AND TEXT SHADOW</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+            display: flex;
+        }
+        .card{
+          padding: 23px 12px;
+          /* border:2px solid red; */
+          margin:12px 6px;
+          text-align: center;
+          background-color: rgb(222, 108, 42);
+          /* box-shadow:offset-x offset-y color; */
+          /* box-shadow:offset-x offset-y blur- radius color; */
+          /* box-shadow:offset-x offset-y blur-radius spread-radius color; */
+          /* box-shadow:-10px -13px black; */
+          /* box-shadow:-10px -12px 10px black; */
+          /* box-shadow:10px 12px 10px 34px black;*/
+          /* box-shadow: inset 3px 5px black ; */
+          box-shadow:10px 13px green,10px 10px black;
+        }
+        .card h1{
+            /* text-shadow:2px 2px white; */
+            /* text-shadow:2px 2px 2px white; */
+            text-shadow:-2px -2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>THIS IS C++ COURSE</h1>
+            <p>I have started this course and we will not end this course without completing it.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde eligendi quis! Veritatis, non eaque dolorem saepe ea dignissimos labore tenetur eos sunt placeat exercitationem quas itaque blanditiis praesentium ut nihil earum, magni quo?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>THIS IS HTML COURSE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro obcaecati minima earum debitis laudantium, accusamus accusantium aspernatur assumenda, dolore fuga id expedita. Consequatur quibusdam laboriosam quia ipsa dolore aliquid omnis ab quasi error.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>CARD3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam placeat quae dignissimos quisquam harum, molestias illo doloribus quam, optio numquam cumque, cum maiores recusandae asperiores porro! Pariatur eaque repellendus, non natus dolorem beatae animi.</p>
+        </div>
+    </div>
+</body>
+</html>

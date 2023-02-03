@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+    <style>
+    .container{
+        width:100%;
+        height: 430px;
+        border:2px solid red;
+        display:flex; /* initialize the container as a flex box */
+        
+        /* Flex properties or flex container */
+         flex-direction:row;/*(Default value of flex direction is row)*/
+        /* flex-direction: column; */
+         /* flex-direction:row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        flex-wrap:no-wrap;/*(Default value of flex wrap is no wrap)*/
+        /* flex-flow: row-reverse wrap; */
+        /* justify-content: center; */
+        /* justify-content:space-between; */
+        /* justify-content:space-evenly; */
+        /* justify-content: space-around; */
+
+        /* justify content  will justify the content horizontal direction */
+        /* align-items will justify the content vertically direction */
+        /* align-items:center; */
+        /* align-items:flex-end; */
+        /* align-items: start; */
+        /* align-items: stretch; */
+        }
+    .item{
+    background-color:tomato;
+    /* display: inline-block; */
+    border: 2px solid black;
+    padding:2px;
+    margin: 10px;
+    height:30%;
+    width:200px;
+    }
+    #item-1{
+    /* flex properties in a flex item */
+    /* Heigher the order ,later it shows in the container */
+      /* order:2; */
+      flex-grow:3;
+    }
+    #item-2{
+       /* order: 3; */
+       /* flex-shrink:2;*/
+       flex-basis:320px;
+       /* when flex-direction is set to be row flex-basis will control width*/
+       /* when flex-direction is set to be column0 flex-basis will control height*/
+    }
+    #item-3{
+     /* order:0; */
+     flex:2 2 230px;
+     /* align-self:flex-start; */
+     /* align-self:flex-end; */
+     align-self:center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>THIS IS FLEXBOX TUTORIAL</h1>
+    <div class="container">
+        <div class="item" id="item-1">FIRST BOX</div>
+        <div class="item" id="item-2">SECOND BOX</div>
+        <div class="item" id="item-3">THIRD BOX</div>
+        <!-- <div class="item" id="item-4">FOURTH BOX</div>
+        <div class="item" id="item-5">FIFTH BOX</div>
+        <div class="item" id="item-6">SIXTH BOX</div> -->
+    </div>
+    
+</body>
+</html>
